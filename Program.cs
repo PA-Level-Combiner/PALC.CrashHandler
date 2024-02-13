@@ -23,7 +23,8 @@ internal class Program
             return;
         }
 
-        string palcVersion = args[0];
+        string program = args[0];
+        string programVersion = args[0];
         string logFilesPath = args[1];
         string githubIssuesLink = args[2];
         string errorMessage = args[3];
@@ -40,7 +41,8 @@ internal class Program
             $"REPORT YOUR ISSUES HERE: {githubIssuesLink}\n" +
             $"Log files are stored in: {logFilesPath}\n" +
             $"\n" +
-            $"Current PALC version: {palcVersion}\n" +
+            $"Program: {program}" +
+            $"Current program version: {programVersion}\n" +
             $"\n" +
             $"\n" +
             $"Scroll down for more options, such as opening the issues page.\n" +
@@ -52,6 +54,7 @@ internal class Program
             $"\n" +
             $"\n" +
             $"\n" +
+            $"An error occurred during runtime that the program never handled correctly:" +
             $"{errorMessage}\n" +
             $"{stackTrace}"
         );
@@ -60,7 +63,7 @@ internal class Program
         Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine(
             "\n\n\n" +
-            "--- PALC crashed. Please scroll up to view more important information. ---" +
+            "--- A PALC-Related program crashed. Please scroll up to view more important information. ---" +
             "\n\n"
         );
 
