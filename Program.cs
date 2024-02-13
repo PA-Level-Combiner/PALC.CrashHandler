@@ -8,7 +8,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        if (args.Length != 5)
+        if (args.Length != 6)
         {
             string wawa = "V2hpbGUgcGxheWluZyBhIFBBIGxldmVsLCBob2xkIGVudGVyL3NwYWNlIGFmdGVyIHVucGF1c2luZyBmb3IgaXQgdG8gZ28gZmFzdGVyLiAoRnJvbSBNb3Rpb25JSUkpCkluIGxlZ2FjeSwgeW91IGNhbiBob2xkIGVudGVyIGFmdGVyIG9wZW5pbmcgdGhlIGdhbWUgdG8gZXNzZW50aWFsbHkgc2tpcCB0aGUgaW50cm8gc2VxdWVuY2UuIChGcm9tIFJlaW1ub3Ap";
             Console.WriteLine(
@@ -24,11 +24,11 @@ internal class Program
         }
 
         string program = args[0];
-        string programVersion = args[0];
-        string logFilesPath = args[1];
-        string githubIssuesLink = args[2];
-        string errorMessage = args[3];
-        string stackTrace = args[4];
+        string programVersion = args[1];
+        string logFilesPath = args[2];
+        string githubIssuesLink = args[3];
+        string errorMessage = args[4];
+        string stackTrace = args[5];
 
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine(
@@ -41,7 +41,7 @@ internal class Program
             $"REPORT YOUR ISSUES HERE: {githubIssuesLink}\n" +
             $"Log files are stored in: {logFilesPath}\n" +
             $"\n" +
-            $"Program: {program}" +
+            $"Program: {program}\n" +
             $"Current program version: {programVersion}\n" +
             $"\n" +
             $"\n" +
