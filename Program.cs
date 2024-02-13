@@ -10,7 +10,7 @@ internal class Program
     {
         if (args.Length != 5)
         {
-            string wawa = "V2hpbGUgcGxheWluZyBhIFBBIGxldmVsLCBob2xkIGVudGVyL3NwYWNlIGFmdGVyIHVucGF1c2luZyBmb3IgaXQgdG8gZ28gZmFzdGVyLiAoRnJvbSBNb3Rpb25JSUkp";
+            string wawa = "V2hpbGUgcGxheWluZyBhIFBBIGxldmVsLCBob2xkIGVudGVyL3NwYWNlIGFmdGVyIHVucGF1c2luZyBmb3IgaXQgdG8gZ28gZmFzdGVyLiAoRnJvbSBNb3Rpb25JSUkpCkluIGxlZ2FjeSwgeW91IGNhbiBob2xkIGVudGVyIGFmdGVyIG9wZW5pbmcgdGhlIGdhbWUgdG8gZXNzZW50aWFsbHkgc2tpcCB0aGUgaW50cm8gc2VxdWVuY2UuIChGcm9tIFJlaW1ub3Ap";
             Console.WriteLine(
                 "Heeeyyyyy, did you just try to open the crash handler? Without crashing the program? Damn...\n" +
                 "Well, while you're here, I'd like to tell you a secret.\n\n" +
