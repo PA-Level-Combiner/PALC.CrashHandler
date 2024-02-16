@@ -38,14 +38,14 @@ internal class Program
             $"\n" +
             $"Here are some resources to report this error:\n" +
             $"\n" +
-            $"REPORT YOUR ISSUES HERE: {githubIssuesLink}\n" +
+            $"REPORT THIS ISSUE HERE: {githubIssuesLink}\n" +
             $"Log files are stored in: {logFilesPath}\n" +
             $"\n" +
             $"Program: {program}\n" +
             $"Current program version: {programVersion}\n" +
             $"\n" +
             $"\n" +
-            $"Scroll down for more options, such as opening the issues page.\n" +
+            $"Scroll down for more options, such as opening the bug reporting page.\n" +
             $"------------------------------------------------------------"
         );
 
@@ -54,8 +54,8 @@ internal class Program
             $"\n" +
             $"\n" +
             $"\n" +
-            $"An error occurred during runtime that the program never handled correctly:" +
-            $"{errorMessage}\n" +
+            $"An error occurred during runtime that the program never handled correctly:\n" +
+            $"{errorMessage}\n\n" +
             $"{stackTrace}"
         );
 
@@ -63,7 +63,7 @@ internal class Program
         Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine(
             "\n\n\n" +
-            "--- A PALC-Related program crashed. Please scroll up to view more important information. ---" +
+            "--- A PALC program crashed. Please scroll up to view more important information. ---" +
             "\n\n"
         );
 
